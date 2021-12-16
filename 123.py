@@ -12,3 +12,4 @@ for i in range(1, len(array)):
     array[idx] = x
 
 print(count)
+print(array)

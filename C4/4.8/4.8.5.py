@@ -1,3 +1,6 @@
+count = 0
+array = [2, 3, 1, 4, 6, 5, 9, 8, 7]
+
 def merge_sort(L):  # «разделяй»
     if len(L) < 2:  # если кусок массива равен 2,
         return L[:]  # выходим из рекурсии
@@ -31,3 +34,5 @@ def merge(left, right):  # «властвуй»
         j += 1
 
     return result
+
+print(merge_sort(array))
