@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66b844c2-3018-4d3b-aac8-aa689df29053" name="Changes" comment="C4">
-      <change afterPath="$PROJECT_DIR$/C4/4.8/4.8.2.1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C4/4.8/4.8.2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C4/4.8/4.8.3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/C4/4.8/4.8.4.py" afterDir="false" />
+    <list default="true" id="66b844c2-3018-4d3b-aac8-aa689df29053" name="Changes" comment="Офис">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/123.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C4/4.8/4.8.5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SF.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SF.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639657558824</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Офис">
+      <created>1639738681323</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639738681323</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +237,7 @@
     <MESSAGE value="тест" />
     <MESSAGE value="C4.3" />
     <MESSAGE value="C4" />
-    <option name="LAST_COMMIT_MESSAGE" value="C4" />
+    <MESSAGE value="Офис" />
+    <option name="LAST_COMMIT_MESSAGE" value="Офис" />
   </component>
 </project>
