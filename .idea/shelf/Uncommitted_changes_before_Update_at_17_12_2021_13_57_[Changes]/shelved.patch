@@ -1,0 +1,101 @@
+Index: C4/4.8/4.8.3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/C4/4.8/4.8.3.py b/C4/4.8/4.8.3.py
+new file mode 100644
+--- /dev/null	(date 1639658429165)
++++ b/C4/4.8/4.8.3.py	(date 1639658429165)
+@@ -0,0 +1,16 @@
++array = [2, 3, 1, 4, 6, 5, 9, 8, 7]
++count = 0
++for i in range(len(array)): # проходим по всему массиву
++
++        idx_min = i # сохраняем индекс предположительно минимального элемента
++        for i in range(len(array)):
++                count += 1
++                idx_max = i
++                for j in range(i, len(array)):
++                        if array[j] > array[idx_max]:
++                                idx_max = j
++                if i != idx_max:
++                        array[i], array[idx_max] = array[idx_max], array[i]
++
++print(array)
++print(count)
+\ No newline at end of file
+Index: C4/4.8/4.8.2.1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/C4/4.8/4.8.2.1.py b/C4/4.8/4.8.2.1.py
+new file mode 100644
+--- /dev/null	(date 1639659520047)
++++ b/C4/4.8/4.8.2.1.py	(date 1639659520047)
+@@ -0,0 +1,11 @@
++array = [2, 3, 1, 4, 6, 5, 9, 8, 7]
++count = 0
++for i in range(len(array)):
++
++    for j in range(len(array) - i - 1):
++        count += 1
++        if array[j] > array[j + 1]:
++            array[j], array[j + 1] = array[j + 1], array[j]
++
++print(array)
++print(count)
+\ No newline at end of file
+Index: C4/4.8/4.8.4.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/C4/4.8/4.8.4.py b/C4/4.8/4.8.4.py
+new file mode 100644
+--- /dev/null	(date 1639660412061)
++++ b/C4/4.8/4.8.4.py	(date 1639660412061)
+@@ -0,0 +1,16 @@
++array = [2, 3, 1, 4, 6, 5, 9, 8, 7]
++count = 0
++for i in range(1, len(array)):
++    count += 1
++    x = array[i]
++    idx = i
++    while idx > 0 and array[idx-1] > x:
++
++        array[idx] = array[idx-1]
++        idx -= 1
++
++    array[idx] = x
++
++
++print(array)
++print(count)
+\ No newline at end of file
+Index: C4/4.8/4.8.2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/C4/4.8/4.8.2.py b/C4/4.8/4.8.2.py
+new file mode 100644
+--- /dev/null	(date 1639658353294)
++++ b/C4/4.8/4.8.2.py	(date 1639658353294)
+@@ -0,0 +1,14 @@
++array = [2, 3, 1, 4, 6, 5, 9, 8, 7]
++count = 0
++for i in range(len(array)): # проходим по всему массиву
++
++        idx_min = i # сохраняем индекс предположительно минимального элемента
++        for j in range(i+1, len(array)):
++                count += 1
++                if array[j] < array[idx_min]:
++                        idx_min = j
++        if i != idx_min: # если индекс не совпадает с минимальным, меняем
++                array[i], array[idx_min] = array[idx_min], array[i]
++
++print(array)
++print(count)
+\ No newline at end of file
